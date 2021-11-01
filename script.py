@@ -72,6 +72,7 @@ def runit(url):
     if diff_titles:
         for title in diff_titles:
             send_email(title, data[title])
+            time.sleep(2)
     store_titles(new_titles)
 
 url = "your url here"
